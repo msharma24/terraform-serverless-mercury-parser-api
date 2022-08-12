@@ -14,7 +14,7 @@ module "mercury_lambda_function" {
   local_existing_package = "./mercury-parser-api/.webpack/mercury.zip"
 
 
-  lambda_role = module.recast_lambda_iam_assumable_role.iam_role_arn
+  lambda_role = module.mercury_lambda_iam_assumable_role.iam_role_arn
 
 
   tags = {

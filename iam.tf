@@ -1,4 +1,4 @@
-module "recast_lambda_iam_assumable_role" {
+module "mercury_lambda_iam_assumable_role" {
   source  = "terraform-aws-modules/iam/aws//modules/iam-assumable-role"
   version = "~> 4.5"
 
@@ -18,18 +18,18 @@ module "recast_lambda_iam_assumable_role" {
     "arn:aws:iam::aws:policy/AmazonElasticFileSystemClientReadWriteAccess",
     "arn:aws:iam::aws:policy/AmazonS3FullAccess",
     "arn:aws:iam::aws:policy/AmazonSNSFullAccess",
-    aws_iam_policy.recast_lambda_custom_policy.arn
+    aws_iam_policy.mercury_lambda_custom_policy.arn
   ]
 }
 
 
-resource "aws_iam_policy" "recast_lambda_custom_policy" {
+resource "aws_iam_policy" "mercury_lambda_custom_policy" {
   name        = "recast-lambda-custom-policy-${random_id.random_id.hex}"
   path        = "/"
   description = "Recast Lambda Function custom IAM Policy"
 
   depends_on = [
-    module.recast_lambda_iam_assumable_role.id
+    module.mercury_lambda_iam_assumable_role.id
   ]
 
   policy = jsonencode({
