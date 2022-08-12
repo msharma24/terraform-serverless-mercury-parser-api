@@ -26,9 +26,12 @@ This will deploy the API Gateway REST API resources and the lambda function with
 
 ### How to Test
 1 - Login to AWS Account and access the API Gateway resources 
+![](https://github.com/msharma24/terraform-serverless-mercury-parser-api/blob/main/img/api_gw.png)
 
 2 - Make a note of the API Gateway Stage `Execution URL`
+![](https://github.com/msharma24/terraform-serverless-mercury-parser-api/blob/main/img/api_gw_url.png)
 
 3- Make a note of the API Gateway Access Key
+![](https://github.com/msharma24/terraform-serverless-mercury-parser-api/blob/main/img/api_keys.png)
 
 Use the `lambda_requestion.html` as the `HTML` file as the payload and run the following command 
