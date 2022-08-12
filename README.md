@@ -35,3 +35,18 @@ This will deploy the API Gateway REST API resources and the lambda function with
 ![](https://github.com/msharma24/terraform-serverless-mercury-parser-api/blob/main/img/api_keys.png)
 
 Use the `lambda_requestion.html` as the `HTML` file as the payload and run the following command 
+```
+curl -X POST -H "Content-Type:application/json" \ 
+-H "cache-control":"no-cache" -H "x-api-key:API_KEY_HERE" \
+-d @lambda_request.html https://API_GATEWAY_EXECUTION_URL/STAGE_NAME/parse-html
+```
+
+#### Example command
+```
+curl -X POST -H "Content-Type:application/json" \
+-H "cache-control":"no-cache" -H  \
+"x-api-key:gHb7ARQQzv9Tl4JRrvpTU7018weheLITp8dBY6Od"  \
+-d @lambda_request.html https://hbhsnscb63.execute-api.ap-southeast-2.amazonaws.com/Prod/parse-html
+```
+
+The result output will be Plain Text Extracted from the payload html file.
