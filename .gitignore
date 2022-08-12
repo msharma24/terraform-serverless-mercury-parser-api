@@ -34,3 +34,4 @@ override.tf.json
 terraform.rc
 
 mercury-parser-api/
+.DS_Store
