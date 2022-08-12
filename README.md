@@ -7,4 +7,4 @@ This project implements the [Mercury Parser API](https://github.com/postlight/me
 
 
 ### Diagram 
-
+![	](https://github.com/msharma24/terraform-serverless-mercury-parser-api/blob/main/img/mercurty-parser-api.png)
