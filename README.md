@@ -1,4 +1,4 @@
-#terraform-serverless-mercury-parser-api
+# terraform-serverless-mercury-parser-api
 
 ## Description
 This project implements the [Mercury Parser API](https://github.com/postlight/mercury-parser-api) with AWS API Gateway and Lambda Function using Terraform.
